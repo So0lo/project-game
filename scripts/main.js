@@ -9,4 +9,4 @@ const generateTreasureCoords = ({width, height}, gap) => ({
         y: generateRandomNumber(height, gap)
 });
 
-console.log(hideTreasure(treasureMap, 50));
+console.log(generateTreasureCoords(treasureMap, 50));
