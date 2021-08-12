@@ -1,17 +1,8 @@
+import {getDistanceToTreasure} from './utils/getDistanceToTreasure.js';
+import {generateTreasureCoords} from './utils/generateTreasureCoords.js';
+
 const hint = document.getElementById(`hint`);
 const treasureMap = document.querySelector('[alt="map"]');
 
-
-function getDistanceToTreasure ({x : cX, y: cY}, 
-        {x : tX, y: tY}) {
-        return Math.sqrt((cX - tX)**2 + (cY - tY)**2);
-}
-
-const generateRandomNumber = (size, gap) => 
-Math.floor(Math.random() * (size - (gap*2)) + gap);
-
-const generateTreasureCoords = ({width, height}, gap) => ({
-        x: generateRandomNumber(width, gap),
-        y: generateRandomNumber(height, gap)
-});
-
+console.log(getDistanceToTreasure({x:2,y:2}, {x:3,y:3}));
+console.log(generateTreasureCoords({width:500, height:500}, 20));
