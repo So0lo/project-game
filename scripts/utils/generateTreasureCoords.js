@@ -1,4 +1,4 @@
-import {generateRandomNumber} from './generateRandomNumber.js';
+import { generateRandomNumber } from './generateRandomNumber.js';
 
 const generateTreasureCoords = ({width, height}, gap) => ({
     x: generateRandomNumber(width, gap),
