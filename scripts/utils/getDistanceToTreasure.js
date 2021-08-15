@@ -1,4 +1,3 @@
-import {generateRandomNumber} from "./generateRandomNumber.js";
 
 function getDistanceToTreasure ({x : cX, y: cY}, 
     {x : tX, y: tY}) {
