@@ -1,3 +1,6 @@
-const hint = document.getElementById(`hint`);
-const map = document.querySelector(`[alt="map"]`);
+import { mapClickHandler } from './utils/mapClickHandler.js';
+
+const treasureMap = document.querySelector('[alt="map"]');
+
+treasureMap.addEventListener(`click`, mapClickHandler);
 
