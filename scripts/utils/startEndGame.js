@@ -1,4 +1,4 @@
-import { openPopUp } from "./popUp.js";
+import { openPopUp } from './popUp/popUp.js';
 import { mapClickHandler} from './mapClickHandler.js';
 import {generateTreasureCoords} from './generateTreasureCoords.js';
 
